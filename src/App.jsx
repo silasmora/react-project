@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import FilmList from './components/FilmsList';
 import './App.css';
 
 class App extends Component {
@@ -7,7 +8,7 @@ class App extends Component {
     super(props)
 
     this.state = {
-      list: ["ready", "set", "GO"],
+      list: [""],
       text: ""
     }
 
@@ -30,8 +31,8 @@ class App extends Component {
     render() {
       return (
         <div>
-          <h1>Hello World!</h1>
-          <form onSubmit={this.onSubmit}>
+          <h1 className='text-center'>Studio Ghibli Films</h1>
+          {/* <form onSubmit={this.onSubmit}>
             <input 
             type="text"
             name='text'
@@ -39,12 +40,13 @@ class App extends Component {
             value={this.state.text}
             onChange={(event) => this.setState({ text: event.target.value })} />
             <button type='submit'>Add</button>
-          </form>
+          </form> */}
           <ul>
             {this.state.list.map((item, index) => {
               return <li key={item + index}>{item}</li>
             })}
           </ul>
+          <FilmList />
         </div>
       )
     }
