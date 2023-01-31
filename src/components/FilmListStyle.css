@@ -1,13 +1,30 @@
 body {
   background-color: #a28089;
   color: white;
+  padding: 1.25rem;
 }
 
-.tiles {
+
+.tiles-card {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 1em;
+  flex-wrap: wrap;
+  border: solid black;
+  padding: 1rem;
+  gap: 1rem ;
+  
+}
+
+.img-card {
+  width: 200px;
+  height: 250px;
+  margin: 1rem;
+  padding: 1rem;
+  
+}
+
+img {
+  max-width: 100%;
   
 }
 
@@ -21,5 +38,7 @@ li {
 }
 
 .center-tiles {
-  text-align: center
+  text-align: center;
+  padding-top: 1em;
+  margin: 0 ;
 }
