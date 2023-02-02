@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-import './FilmListStyle.css'
+// import './FilmListStyle.css'
 
 
 export default function FilmList(props) {
@@ -25,15 +25,17 @@ export default function FilmList(props) {
  
   return (
       <div>
+        <h1>Studio Ghibli Films</h1>
+
         <ul className='tiles-card'>
         {list.map((film) => {
           return (
             <li key={film.id}>
-            <h2 className='center-tiles'>{film.title}</h2>
-            <div className='img-card'>
-              <img src={`${film.image}`} alt="Film Posters" />
-            </div>
-            <a href={`${film}`}></a>
+              <h2 className='center-tiles'>{film.title}</h2>
+              <div className='img-card'>
+                <img src={`${film.image}`} alt="Film Posters" />
+              </div>
+              {/* <a href={`${film}`}></a> */}
             </li>)
           })}
         </ul>
