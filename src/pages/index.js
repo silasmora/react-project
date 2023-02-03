@@ -1,5 +1,6 @@
 import HomePage from "./Home.page"
 import FilmsPage from "./Films.page"
+import SingleFilmPage from "./singlefilm.page"
 
 
 
@@ -7,4 +8,4 @@ import FilmsPage from "./Films.page"
 
 
 
-export {HomePage, FilmsPage }
+export {HomePage, FilmsPage, SingleFilmPage }
